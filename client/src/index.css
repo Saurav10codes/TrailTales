@@ -1,0 +1,17 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  font-family: 'Courier New', monospace;
+  background-color: #FFE600;
+}
+
+@keyframes pulse-border {
+  0%, 100% { box-shadow: 4px 4px 0px 0px #000; }
+  50% { box-shadow: 6px 6px 0px 0px #000; }
+}
+
+.animate-brutal-pulse {
+  animation: pulse-border 1.5s ease-in-out infinite;
+}
